@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=WindSong:wght@500&display=swap');
+*{
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+}
+body{
+    overflow-x: hidden;
+    background-color: #fff;
+    min-height: 100vh;
+    /* color: #094b65;
+    width: 100%;
+    height: 150px;
+    overflow-x: hidden; */
+    
+}
+pre,h2{
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(156, 156, 156, 0.281);
+}
+
+#header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:10000;
+}
+.logo{
+    color: #094b65;
+    font-size:  2em;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(33, 33, 33, 0.418);
+    font-family: 'Merienda', cursive;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+hr{
+    opacity: 0.2;
+}
+#book{
+    text-align: center;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 70px;
+    text-align: center;
+    height: 50px;
+    width: 140px;
+    color: #fff;
+    background-color:#82b342 ;
+    border: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    box-shadow:  3px 2px 2px rgba(39, 33, 33, 0.582) ;
+}
+#call{color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 70px;
+    text-align: center;
+    height: 50px;
+    width: 140px;
+    color: #fff;
+    background-color:#82b342 ;
+    border: none;
+    box-shadow:  3px 2px 2px rgba(39, 33, 33, 0.582) ;}
+.footer li a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    background-color:#094b65 ;
+    box-shadow:  3px 2px 2px rgba(39, 33, 33, 0.582) ;
+}
+.footer p{
+    text-shadow: 2px 2px 6px rgba(33, 33, 33, 0.582);
+}
+
+#book:hover,
+#call:hover{
+  background-color:#508110 ;
+  cursor:progress;
+
+}
+.footer li a:hover{
+    background-color:#0a212b ;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+#header li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+    
+}
+#header li a:hover,.active{
+    background-color: #094b65;
+    color: #fff;
+    border-radius: 20px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height:100px;
+    background-image: linear-gradient(to top ,#094b65, transparent);
+    z-index:10;
+
+}
+#text_content{
+    position: absolute;
+    color: #094b65;
+    text-align: center;
+    font-size: 10vw;
+    line-height: 0.55em;
+    font-family: 'WindSong', cursive;
+    transform: translateY(-50%);
+
+}
+section span{
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#exp{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  background-color:#82b342 ;
+  box-shadow: 1px 2px 3px #7da549 ;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  transform: translateY(100px);
+}
+.scroll_one{
+    background-color: #094b65;
+    color: #fff;
+    position: relative;
+    padding: 89px;
+    width: 100%;
+    height: 100%;
+}
+
+.scroll_one h2{
+    font-size:3.5em;
+    margin-bottom: 10px;
+}
+
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.scroll {
+    margin: 20px;
+    padding: 0;  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #fff;
+    position: relative;
+    padding: 89px;
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+}
+.scroll span{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    transform-origin:center ;
+    transform-style: preserve-3d;
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+    transform: rotateY(calc(var(--i)* 45deg)) translateZ(400px);
+}
+.img_style{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+
+}
